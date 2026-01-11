@@ -1,0 +1,46 @@
+route-feasibility-electric-bus/
+│
+├── README.md
+├── LICENSE
+├── requirements.txt
+│
+├── data/
+│   ├── raw/
+│   │   └── routes_raw.csv
+│   ├── processed/
+│   │   └── routes_features.csv
+│   └── README.md
+│
+├── notebooks/
+│   ├── 01_exploratory_analysis.ipynb
+│   ├── 02_feature_engineering.ipynb
+│   └── 03_model_training.ipynb
+│
+├── src/
+│   ├── __init__.py
+│   │
+│   ├── data/
+│   │   ├── load_data.py
+│   │   └── preprocess.py
+│   │
+│   ├── features/
+│   │   └── build_features.py
+│   │
+│   ├── models/
+│   │   ├── linear_regression.py
+│   │   └── evaluate.py
+│   │
+│   └── feasibility/
+│       └── checker.py
+│
+├── experiments/
+│   └── baseline_linear_regression.yaml
+│
+├── results/
+│   ├── metrics.json
+│   └── figures/
+│
+└── docs/
+    ├── problem_statement.md
+    ├── methodology.md
+    └── references.md
